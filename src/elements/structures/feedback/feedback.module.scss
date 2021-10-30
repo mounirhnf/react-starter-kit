@@ -1,0 +1,75 @@
+@use 'styles' as *;
+
+//------------------------------------------------------------------------------
+
+$error: '.error';
+
+//------------------------------------------------------------------------------
+
+.root {
+  @extend %center;
+  flex-direction: column;
+  height: 100vh;
+  width: 600px;
+  max-width: 90vw;
+  margin: 0 auto;
+  animation: fade-in $transition ease-in;
+}
+
+//------------------------------------------------------------------------------
+
+.code {
+  margin: 0;
+  margin-bottom: 20px;
+  color: $secondary-8;
+  font-size: 12rem;
+  line-height: 12rem;
+  user-select: none;
+
+  #{$error} & {
+    color: $danger;
+  }
+}
+
+.title {
+  margin: 0;
+  color: $primary;
+  text-align: center;
+
+  #{$error} & {
+    color: $danger;
+  }
+}
+
+.message {
+  margin: 20px 0 30px;
+  font-weight: 500;
+  color: $secondary-5;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.action {
+  font-weight: 800;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: $secondary-4;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color $transition;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+//------------------------------------------------------------------------------
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}

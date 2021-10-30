@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "allowUnreachableCode": false,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUnusedLocals": true,
+    "strict": true,
+    "baseUrl": "src",
+    "module": "es6",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "outDir": "./build/",
+    "removeComments": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "es5",
+    "skipLibCheck": true
+  },
+  "include": ["**/*.ts", "**/*.d.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}

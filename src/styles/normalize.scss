@@ -1,0 +1,26 @@
+@use 'variables' as vars;
+
+//------------------------------------------------------------------------------
+
+html {
+  font-size: 10px;
+}
+
+html, body, #root, main {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-size: 1.4rem;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  font-family: vars.$font-name, sans-serif;
+  letter-spacing: .12rem;
+}

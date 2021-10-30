@@ -1,0 +1,130 @@
+@use 'styles' as *;
+
+//------------------------------------------------------------------------------
+
+$root-xs: '.root-xs';
+
+//------------------------------------------------------------------------------
+
+.root {
+  @extend %center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  padding: 100px 5%;
+  background-color: $secondary-9;
+  color: $secondary-0;
+  text-align: center;
+  overflow: hidden;
+  overflow-y: auto;
+
+  * {
+    z-index: 2;
+  }
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  min-width: 1400px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  @extend %fill;
+  background-color: rgba(#000000, .75);
+}
+
+//------------------------------------------------------------------------------
+
+.main-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.description {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.secondary-title {
+  margin: 40px 0;
+  color: #8a8a8a;
+  font-weight: 900;
+}
+
+//------------------------------------------------------------------------------
+
+.tech {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  max-width: 100%;
+
+  #{$root-xs} & {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 40px;
+    grid-column-gap: 80px;
+  }
+}
+
+.brand {
+  width: 60px;
+  user-select: none;
+
+  #{$root-xs} & {
+    width: 70px;
+  }
+}
+
+//------------------------------------------------------------------------------
+
+.author {
+  margin: 0;
+  margin-bottom: 10px;
+  color: $secondary-0;
+  font-size: 2.4rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.author-info {
+  display: flex;
+  line-height: 0;
+  margin: 10px 0 20px;
+}
+
+.author-icon-link:not(:last-child) {
+  margin-right: 20px;
+}
+
+.author-icon {
+  color: $secondary-4;
+  font-size: 3rem;
+  transition: color $transition;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.call-to-action {
+  font-weight: 500;
+}
+
+.action-link {
+  margin: 0 5px;
+  color: $primary;
+  font-weight: 700;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
