@@ -27,7 +27,7 @@ const Welcome: React.FC = () => {
 
   const rootClasses = clsx(
     cls['root'],
-    ['xs'].includes(screenType) && cls['root-xs'],
+    screenType === 'xs' && cls['root-xs'],
   );
 
   return (

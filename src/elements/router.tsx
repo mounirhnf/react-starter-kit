@@ -8,12 +8,16 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
+import useAutoScreenType from 'hooks/use-auto-screen-type';
+
 import Feedback from 'elements/structures/feedback';
 import Welcome from 'elements/structures/welcome';
 
 //------------------------------------------------------------------------------
 
 const Router: React.FC = () => {
+  useAutoScreenType();
+
   return (
     <BrowserRouter>
       <Switch>
