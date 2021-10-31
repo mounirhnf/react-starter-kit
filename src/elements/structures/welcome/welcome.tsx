@@ -85,7 +85,7 @@ const Welcome: React.FC = () => {
       <p className={cls['call-to-action']}>
         Click
         <a className={cls['action-link']}
-            href={readmeLink}
+            href={usageLink}
             target='_blank'
             rel='noreferrer noopener'>
           HERE
@@ -100,8 +100,7 @@ const Welcome: React.FC = () => {
 
 //------------------------------------------------------------------------------
 
-const readmeLink = `https://github.com/mounirhnf/react-starter-kit/blob/main/RE\
-ADME.md`;
+const usageLink = `https://github.com/mounirhnf/react-starter-kit#usage-`;
 
 //------------------------------------------------------------------------------
 
