@@ -8,7 +8,7 @@
     "noUnusedLocals": true,
     "strict": true,
     "baseUrl": "src",
-    "module": "es6",
+    "module": "commonjs",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "outDir": "./build/",
@@ -19,7 +19,7 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "target": "es5",
+    "target": "es6",
     "skipLibCheck": true
   },
   "include": ["**/*.ts", "**/*.d.ts", "**/*.tsx"],
