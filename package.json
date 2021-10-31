@@ -18,7 +18,6 @@
     "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^5.2.7",
     "dotenv": "^10.0.0",
-    "error-overlay-webpack-plugin": "^0.4.2",
     "eslint": "^7.30.0",
     "eslint-config-react-app": "^6.0.0",
     "eslint-loader": "^4.0.2",
